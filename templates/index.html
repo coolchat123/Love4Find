@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="animate.min.css">
+    <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+body{
+    background-color: rgb(201, 61, 84);
+    background-image: url("resources/background.png");
+}
+
+
+@keyframes bounceIn {
+  0% {
+    transform: scale(0.1);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+div {
+  animation: bounceIn 2s;
+}
+.beginpage{
+    margin-top: 20%;
+    text-align: center;
+}
+span{
+    text-align: center;
+    font-size: 22px;
+    font-family: 'Merienda', cursive;
+}
+.imgh{
+    margin-left: 40%;
+}
+.line{
+    color: black;
+    line-height: 20px;
+}
+    </style>
+<div class="sidebox">
+<img class="imgh" src="resources/smallheart_trans.png"><span>Love4Find</span>
+<div class="line"></div>
+</div>
+<div class="beginpage">
+<div><img src="resources/love4findlogo_trans.png"></div>
+</div>
+
+
+<script>
+    setTimeout(func, 2500);
+function func() {
+  window.location = 'home.html';
+}
+</script>
+</body>
+</html>

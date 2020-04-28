@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="animate.min.css">
+    <title>Love4Find</title>
+</head>
+<style>
+
+    body{
+        font-family: 'Roboto', sans-serif;
+        background-image: url("resources/Backimgg.jpg");
+        background-repeat: no-repeat;
+        background-size: 105%;
+        background-color: rgb(121, 121, 121);
+        overflow: hidden auto;
+    }
+    .navbar{
+        background-color: rgba(255, 255, 255, 0);
+        margin: -8px;
+        margin-top: 12px;
+        height: 55px;
+    }
+    .l4f_logo{
+        margin-top: 0.8%;
+        display: inline-block;
+        background-color: rgba(0, 0, 0, 0);
+        height: 50px;
+        width: 52px;
+        background-image: url("resources/smallheart_trans.png");
+        margin-left: 4rem;
+        margin-bottom: -14px;
+    }
+    .lovefind_{
+        display: inline-block;
+        margin-left: 1.5rem;
+        font-size: 25px;
+        font-weight: bold;
+    }
+    .sign_in{
+        margin-left: 65%;
+        font-size: 17px;
+        margin-top: 1.6%;
+        display: inline-block;
+    }
+    .sign_inb{
+        margin-right: 4rem;
+        margin-left: 1.5rem;
+        text-align: right;
+        border: none;
+        background-color: red;
+        color: rgb(255, 255, 255);
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        cursor: pointer;
+        transition:color 1s ease-in;
+       
+    }
+    .sign_inb:hover{
+        color:rgb(0, 0, 0);
+    }
+    #container{
+        position: relative;
+        min-height: 100vh;
+    }
+    #content{
+        padding-bottom: 2.5rem;
+    }
+    .textbox{
+        margin: 0 auto;
+        width: 150px;
+        height: 100px;
+        background-color: rgba(255, 255, 255, 0.801);
+        font-size: 22px;
+    }
+    .joinb{
+        position: absolute;
+        margin-top: 2rem;
+        border-radius: 10px;
+        margin-right: 2rem;
+        margin-left: 1rem;
+        border: none;
+        background-color: rgb(241, 138, 3);
+        color: rgb(255, 255, 255);
+        padding: 15px 25px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    .joinbb{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        border: none;
+        background-color: rgb(252, 21, 21);
+        color: rgb(0, 0, 0);
+        padding: 20px 50px;
+        text-align: center;
+        left: 0;
+        width: 20%;
+        text-decoration: none;
+        font-size: 20px;
+        cursor: pointer;
+        border-radius: 10px;
+        position: absolute;
+        left: 50%;
+        top: 30%;
+        transform: translate(-50%, -50%);
+        transition:background-color 2s ease-in;
+        transition:color 1s ease-in;
+    }
+    .joinbb:hover{
+        background-color: rgb(255, 52, 52);
+        color:white;
+    }
+    #box1{
+        position: absolute;
+        background-color: rgb(145, 145, 145);
+        width: 350px;
+        height: 338px;
+        right: 2rem;
+        bottom: 2.5%;
+        margin-bottom: 1rem;
+    }
+    #box2{
+        position: absolute;
+        width: 350px;
+        height: 338px;
+        bottom:  2.5%;
+        background-color: rgb(145, 145, 145);
+        left: 2rem;
+        margin-bottom: 1rem;
+
+
+    }
+    img{
+        bottom:  4%;
+        margin-left: 40%;
+        position: absolute;
+        margin-bottom: 1rem;
+    }
+    #boxes{
+        background-color: rgba(65, 105, 225, 0);
+        width: 20px;
+        height: 30px;
+        margin-top: 15%;
+
+    }
+    h3{
+        margin-top: 15%;
+        text-align: center;
+        font-size: 30px;
+        color: rgb(20, 20, 20);
+    }
+    footer {
+        position: absolute;
+        text-align: center;
+        bottom: 10;
+        width: 100%;
+        height: 8rem;  
+        background-color: rgb(59, 59, 59);
+    }
+    .footertext{
+        position:absolute;
+        margin: -50px -100px; 
+        top:35%; 
+        left:50%;
+        color: rgb(255, 255, 255);
+        display: inline-block;
+    }
+    .loginb{
+        position:absolute;
+        margin: -40px -100px; 
+        top:45%; 
+        left:240%;
+        background-color: #f32f74;
+        border-radius: 4px;
+        border-width: 0;
+        color: #fff;
+        cursor: pointer;
+        display: inline-block;
+        font-family: "DINRoundOT-Light";
+        font-size: 24px;
+        font-weight: 500;
+        height: 40px;
+        line-height: 30px;
+        padding: 5px;
+        text-decoration: none;
+        width: 256px;
+    }
+    .copyright{
+        font-size: smaller;
+        position:absolute;
+        margin: -40px -100px; 
+        top:100%; 
+        left:20%;
+    }
+    a{
+        text-decoration: none;
+        color: black;
+    }
+    li{
+        list-style:none;
+    }
+    li:a:hover{
+        color: blue;
+    }
+    h4{
+        color: black;
+    }
+</style>
+<nav class="navbar">
+<div class="l4f_logo"></div>
+<li class="lovefind_"><a>Love4Find</a></li>
+<div class="sign_in">
+<span>Have an account?</span>
+<button class="sign_inb" onclick="login()">Sign in</button>
+</div>
+</nav>
+<body>
+<div id="container">
+    <div id="content">
+        <h3></h3>
+
+        <button onclick="register();" class="joinbb">Become Member></button>
+    <div id="boxes">
+<div id="box1"></div>
+<img alt="F4_logo" src="resources/love4findlogo_trans.png">
+<div id="box2"></div>
+</div>
+</div>
+</div>
+<footer>
+<i src="resources/smallheart_trans.png"> </i>
+<div class="footertext">
+
+<ul>
+    <button class="loginb">Sign up for free!</button>
+    <h4>Find4Love</h4>
+    <hr>
+    <li>
+        <a href="">How does it work?</a></li>
+    <li>
+        <a href="">Terms</a></li>
+</ul>
+</div>
+<a class="copyright">Copyright © 2020 Find4Love</a>
+</footer>
+<script>
+    function login(){
+        window.location = 'login.html';
+    }
+    function register(){
+        window.location = 'register.html';
+    }
+    </script>
+</body>
+</html>

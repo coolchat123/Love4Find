@@ -1,0 +1,8 @@
+a website made in flask
+
+-home page /
+-login / 
+-register /
+-questions about yourself
+-account page
+https://wireframe.cc/pro/edit/337611

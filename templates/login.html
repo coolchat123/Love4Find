@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <title>Login</title>
+</head>
+<style>
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url(https://fonts.googleapis.com/css?family=Federo);
+
+/* Media Queries: Tablet Landscape */
+@media screen and (max-width: 1060px) {
+    #primary { width:67%; }
+    #secondary { width:30%; margin-left:3%;}  
+}
+
+/* Media Queries: Tabled Portrait */
+@media screen and (max-width: 768px) {
+    #primary { width:100%; }
+    #secondary { width:100%; margin:0; border:none; }
+}
+
+img { max-width: 100%; height: auto; }
+
+body {
+    /* general styles */
+    background-image: url("resources/loginbackimg.jpg");
+    padding: 30px;
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+    background-repeat: no-repeat;
+    background-size: 105%;
+}
+
+.navbar{
+    background-color: rgba(255, 255, 255, 0);
+    margin: -8px;
+    margin-top: 12px;
+    height: 55px;
+}
+.l4f_logo{
+    margin-top: 0.8%;
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0);
+    height: 50px;
+    width: 52px;
+    background-image: url("resources/smallheart_trans.png");
+    margin-left: 39%;
+    margin-bottom: -4rem;
+    text-decoration: none;
+}
+.lovefind_{
+    list-style: none;
+    margin-left: 20rem;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+/* overlay styles, all needed */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 10;
+}
+
+/* just some content with arbitrary styles for explanation purposes */
+.modal {
+    line-height: 120px;
+    width: 700px;
+    height: 600px;
+    position: absolute;
+    top: 40%; 
+    left: 26%;
+    margin-top: -10rem;
+    margin-left: -0rem;
+    background-color: #00000070;
+    border-radius: 5px;
+    z-index: 11; /* 1px higher than the overlay layer */
+}
+
+h2 {
+    font-family: 'Federo', sans-serif;
+    font-size: 24px;
+    margin-left: 16rem;
+    margin-top: 10px;
+    margin-bottom: -2.5rem;
+}
+.login{
+    margin-left: 1rem;
+    display:inline-block;
+    line-height: 120px;
+}
+.loginhr {
+    border-top: 1px solid rgb(250, 76, 76);
+    border: 2px solid rgb(250, 76, 76);
+    width: 500px;
+}
+.submit-button{
+    font-family: 'Federo', sans-serif;
+    float: right;
+    margin: 10px 0 24px;
+    width: 60%;
+    background: #fc1d6c;
+    font-size: 24px;
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+    line-height: 50px;
+    padding: 0;
+    border: 0;
+    border: 1px solid #fc1d6c;
+    transition:background-color 2s ease-in;
+    transition:color 1s ease-in;
+}
+.submit-button:hover{
+    background-color: rgb(255, 255, 255);
+    color: white;
+}
+label{
+    display: inline-block;
+    clear: left;
+    width: 250px;
+    text-align: right;
+    margin-right: 3px;
+}
+input {
+  display: inline-block;
+  padding: 12px 20px;
+    margin: 8px 0;
+    display: table-cell;
+}
+a{
+    list-style: none;
+    position: absolute;
+    color: black;
+    margin-top: 1.5rem;
+    text-decoration: none;
+    margin-left: 15rem;
+}
+span {
+    position: absolute;
+    color: black;
+    margin-top: 1.5rem;
+    text-decoration: none;
+    margin-left: 12rem;
+}
+.go-backb{
+    position: absolute;
+    margin: 0.5rem;
+    height: 65px;
+    width: auto;
+}
+
+</style>
+<body>
+<div class="container">
+    <div class="overlay"><nav class="navbar">
+        <div class="l4f_logo"></div>
+        <li class="lovefind_"><a>Love4Find</a></li>
+        <div class="sign_in">
+    </div>
+</div>
+</nav>
+
+  <div class="modal">
+    <img onclick="window.location = 'home.html';" class="go-backb" src="resources/angle-left-solid.svg">
+    <h2>Log in for members</h2>
+    <hr class="loginhr">
+    <div class="login">
+    <form name="loginform" method="GET">
+ <label>Emailadres</label>
+ <input type="email" placeholder="E-mailadres" name="Email" id="user_email" autocomplete="off" ng-minlength="5" ng-model="user.Email" ng-required="true" required="required">
+<br>
+<label>Password</label>
+<input type="password" placeholder="Password" name="Password" id="user_password" autocomplete="off" ng-model="user.Password" ng-required="true" required="required">
+<br>
+    <button class="submit-button" type="submit">Login</button>
+   <span>Don't have an account yet </span> <a style="text-decoration: underline;margin-left: 390px;" href="register.html">register</a>
+</div>
+    </div>
+</form>
+</body>
+</html>
+
+
+
